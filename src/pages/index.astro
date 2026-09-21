@@ -1,11 +1,59 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Categories from '../components/Categories.astro';
+import FlashOffers from '../components/FlashOffers.astro';
+import FeaturedProducts from '../components/FeaturedProducts.astro';
+import PaymentMethods from '../components/PaymentMethods.astro';
+import SocialCommunity from '../components/SocialCommunity.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Footer from '../components/Footer.astro';
+import CartDrawer from '../components/CartDrawer.astro';
+import ProductModal from '../components/ProductModal.astro';
+import WhatsAppFloating from '../components/WhatsAppFloating.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout 
+  title="NJ Importaciones | Cosméticos, Labiales, Esmaltes y Belleza en Perú"
+  description="Compra online cosméticos de alta gama para mujer: esmaltes de uñas, labiales indelebles, maquillaje para rostro y cremas de skincare. Paga fácil con Yape o Tarjetas. Envíos rápidos a todo el Perú."
+>
+  <!-- Navigation Header -->
+  <Navbar />
+
+  <!-- Main Landing Page Content -->
+  <main class="flex-1">
+    <!-- Hero Banner with Official Logo Branding -->
+    <Hero />
+
+    <!-- Category Highlights -->
+    <Categories />
+
+    <!-- Limited-Time Flash Offers with Countdown -->
+    <FlashOffers />
+
+    <!-- Interactive Filterable Products Catalog -->
+    <FeaturedProducts />
+
+    <!-- Trust & Payment Methods (Yape, Tarjetas, BCP, CCI) -->
+    <PaymentMethods />
+
+    <!-- Social Media Community Showcase (IG, TikTok, FB, WhatsApp) -->
+    <SocialCommunity />
+
+    <!-- Real Customer Testimonials -->
+    <Testimonials />
+  </main>
+
+  <!-- Footer -->
+  <Footer />
+
+  <!-- Interactive Shopping Cart Drawer (Vanilla JS) -->
+  <CartDrawer />
+
+  <!-- Quick View Product Details Modal (Vanilla JS) -->
+  <ProductModal />
+
+  <!-- Floating Sticky WhatsApp Action Button -->
+  <WhatsAppFloating />
 </Layout>

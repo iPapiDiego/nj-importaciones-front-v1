@@ -1,0 +1,212 @@
+---
+import { Image } from 'astro:assets';
+import logoImg from '../assets/logo.jpeg';
+import IconInstagram from '../assets/icons/IconInstagram.astro';
+import IconTikTok from '../assets/icons/IconTikTok.astro';
+import IconFacebook from '../assets/icons/IconFacebook.astro';
+import IconWhatsApp from '../assets/icons/IconWhatsApp.astro';
+import { SITE_CONFIG } from '../config/site';
+import { buildWhatsAppLink } from '../utils/format';
+---
+
+<footer class="bg-brand-dark text-gray-300 border-t border-brand-pink/20 pt-14 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top Row: Brand & Links Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10 pb-10 border-b border-white/10">
+      
+      <!-- Col 1: Brand Info (Centered on Mobile, Left-aligned on Desktop, Spans 2 cols on lg) -->
+      <div class="lg:col-span-2 space-y-4 flex flex-col items-center md:items-start text-center md:text-left pb-4 md:pb-0 border-b border-white/10 md:border-b-0">
+        <a href="/" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-full overflow-hidden ring-2 ring-brand-pink/60 group-hover:ring-brand-pink transition-all shadow-md shadow-pink-900/40 shrink-0">
+            <Image 
+              src={logoImg} 
+              alt={`${SITE_CONFIG.name} Logo`} 
+              width={96} 
+              height={96} 
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="flex flex-col text-left">
+            <div class="flex items-center gap-1">
+              <span class="font-serif text-2xl font-bold tracking-wider text-white group-hover:text-pink-200 transition-colors">{SITE_CONFIG.shortName}</span>
+              <span class="text-brand-pink text-xs">♥</span>
+            </div>
+            <span class="text-[10px] tracking-[0.25em] text-pink-300 font-semibold uppercase">Importaciones</span>
+          </div>
+        </a>
+
+        <p class="text-xs sm:text-sm text-gray-400 max-w-sm leading-relaxed">
+          {SITE_CONFIG.description}
+        </p>
+
+        <!-- Social Icons (Centered on Mobile) -->
+        <div class="flex items-center justify-center md:justify-start gap-3 pt-2">
+          <a href={SITE_CONFIG.social.instagram.url} target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-brand-pink text-pink-200 hover:text-white border border-white/10 flex items-center justify-center transition-all hover:scale-105" aria-label="Instagram">
+            <IconInstagram size={18} />
+          </a>
+          <a href={SITE_CONFIG.social.tiktok.url} target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-brand-pink text-pink-200 hover:text-white border border-white/10 flex items-center justify-center transition-all hover:scale-105" aria-label="TikTok">
+            <IconTikTok size={18} />
+          </a>
+          <a href={SITE_CONFIG.social.facebook.url} target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-brand-pink text-pink-200 hover:text-white border border-white/10 flex items-center justify-center transition-all hover:scale-105" aria-label="Facebook">
+            <IconFacebook size={18} />
+          </a>
+          <a href={buildWhatsAppLink()} target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-emerald-900/40 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 flex items-center justify-center transition-all hover:scale-105" aria-label="WhatsApp">
+            <IconWhatsApp size={18} />
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Enlaces Rápidos (Collapsible Accordion on Mobile, Always open on Desktop) -->
+      <div class="border-b border-white/10 md:border-b-0 pb-3 md:pb-0">
+        <button
+          type="button"
+          class="w-full flex items-center justify-between py-2 text-left md:pointer-events-none cursor-pointer md:cursor-default select-none"
+          data-footer-accordion-trigger
+          aria-expanded="false"
+        >
+          <h4 class="font-serif font-bold text-white text-base tracking-wide flex items-center gap-2">
+            <span>Enlaces Rápidos</span>
+          </h4>
+          <svg class="w-4 h-4 text-pink-300 transform transition-transform duration-300 md:hidden accordion-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+
+        <div class="accordion-content md:!grid md:![grid-template-rows:1fr]">
+          <div class="accordion-inner pt-2 md:pt-3">
+            <ul class="space-y-2 text-xs text-center md:text-left">
+              <li><a href="#inicio" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Inicio</a></li>
+              <li><a href="#ofertas" class="text-pink-300 hover:text-white transition-colors font-semibold py-1 block">Ofertas Flash ⚡</a></li>
+              <li><a href="#categorias" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Categorías</a></li>
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Catálogo de Cosméticos</a></li>
+              <li><a href="#pagos" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Métodos de Pago & Envíos</a></li>
+              <li><a href="#redes" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Nuestra Comunidad</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 3: Categorías Populares (Collapsible Accordion on Mobile, Always open on Desktop) -->
+      <div class="border-b border-white/10 md:border-b-0 pb-3 md:pb-0">
+        <button
+          type="button"
+          class="w-full flex items-center justify-between py-2 text-left md:pointer-events-none cursor-pointer md:cursor-default select-none"
+          data-footer-accordion-trigger
+          aria-expanded="false"
+        >
+          <h4 class="font-serif font-bold text-white text-base tracking-wide flex items-center gap-2">
+            <span>Categorías</span>
+          </h4>
+          <svg class="w-4 h-4 text-pink-300 transform transition-transform duration-300 md:hidden accordion-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+
+        <div class="accordion-content md:!grid md:![grid-template-rows:1fr]">
+          <div class="accordion-inner pt-2 md:pt-3">
+            <ul class="space-y-2 text-xs text-center md:text-left">
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Labiales Velvet & Gloss</a></li>
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Esmaltes de Uñas en Gel</a></li>
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Cremas Faciales & Skincare</a></li>
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Serums Antimanchas & Glow</a></li>
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Bases & Rubores Líquidos</a></li>
+              <li><a href="#catalogo" class="text-gray-300 hover:text-brand-pink transition-colors py-1 block">Brochas Profesionales</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 4: Atención & Medios de Pago (Collapsible Accordion on Mobile, Always open on Desktop) -->
+      <div class="border-b border-white/10 md:border-b-0 pb-3 md:pb-0">
+        <button
+          type="button"
+          class="w-full flex items-center justify-between py-2 text-left md:pointer-events-none cursor-pointer md:cursor-default select-none"
+          data-footer-accordion-trigger
+          aria-expanded="false"
+        >
+          <h4 class="font-serif font-bold text-white text-base tracking-wide flex items-center gap-2">
+            <span>Paga Seguro & Atención</span>
+          </h4>
+          <svg class="w-4 h-4 text-pink-300 transform transition-transform duration-300 md:hidden accordion-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+
+        <div class="accordion-content md:!grid md:![grid-template-rows:1fr]">
+          <div class="accordion-inner pt-2 md:pt-3 space-y-3 text-center md:text-left flex flex-col items-center md:items-start">
+            <p class="text-xs text-gray-400">
+              Aceptamos los principales métodos de pago en Perú:
+            </p>
+
+            <!-- Payment Badges in Footer -->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+              <span class="inline-flex items-center px-2 py-1 bg-[#9117A0] text-white text-[10px] font-bold rounded">
+                YAPE
+              </span>
+              <span class="inline-flex items-center px-2 py-1 bg-white text-blue-900 text-[10px] font-extrabold rounded">
+                VISA
+              </span>
+              <span class="inline-flex items-center px-2 py-1 bg-white text-red-600 text-[10px] font-extrabold rounded">
+                Mastercard
+              </span>
+              <span class="inline-flex items-center px-2 py-1 bg-[#002A8D] text-white text-[10px] font-bold rounded">
+                BCP
+              </span>
+            </div>
+
+            <div class="space-y-1.5 text-xs text-gray-400 pt-1">
+              <p>📞 WhatsApp: <span class="text-white font-medium">{SITE_CONFIG.whatsapp.display}</span></p>
+              <p>⏰ {SITE_CONFIG.hours}</p>
+              <p>📍 {SITE_CONFIG.location} (Envíos nacionales)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Row: Copyright & Disclaimers (Centered on Mobile) -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 text-center sm:text-left">
+      <p>
+        © 2026 <strong class="text-pink-300">{SITE_CONFIG.name}</strong>. Todos los derechos reservados. Cosméticos y Belleza Femenina en Perú.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+        <a href="#pagos" class="hover:text-brand-pink transition-colors">Términos de Envío</a>
+        <a href="#pagos" class="hover:text-brand-pink transition-colors">Garantía de Satisfacción</a>
+        <a href={buildWhatsAppLink("Hola, deseo información sobre el libro de reclamaciones")} class="text-emerald-400 hover:underline">Libro de Reclamaciones</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Mobile Footer Accordion Controller
+  function initFooterAccordions() {
+    const accordionTriggers = document.querySelectorAll<HTMLButtonElement>('[data-footer-accordion-trigger]');
+
+    accordionTriggers.forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (window.innerWidth >= 768) return; // Disabled on desktop
+
+        const content = btn.nextElementSibling as HTMLElement | null;
+        const chevron = btn.querySelector('.accordion-chevron') as HTMLElement | null;
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+        if (isExpanded) {
+          btn.setAttribute('aria-expanded', 'false');
+          content?.classList.remove('is-open');
+          chevron?.classList.remove('rotate-180');
+        } else {
+          btn.setAttribute('aria-expanded', 'true');
+          content?.classList.add('is-open');
+          chevron?.classList.add('rotate-180');
+        }
+      });
+    });
+  }
+
+  initFooterAccordions();
+</script>

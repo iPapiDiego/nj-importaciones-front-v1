@@ -1,0 +1,141 @@
+---
+import { PRODUCTS, CATEGORIES } from '../data/products';
+import ProductCard from './ProductCard.astro';
+import { buildWhatsAppLink } from '../utils/format';
+---
+
+<section id="catalogo" class="py-16 sm:py-24 bg-white relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-10 reveal-on-scroll">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-100 border border-brand-pink/30 text-brand-pink-hover text-xs font-bold uppercase tracking-wider mb-3">
+        <span>Catálogo 100% Original</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+        Nuestros Cosméticos Destacados
+      </h2>
+      <p class="mt-3 text-sm sm:text-base text-gray-600">
+        Fórmulas de calidad internacional, alta pigmentación y cuidado delicado para cada tipo de piel.
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-3 mb-8 sm:mb-10 no-scrollbar touch-pan-x reveal-on-scroll delay-100">
+      {CATEGORIES.map((cat, idx) => (
+        <button
+          type="button"
+          data-category-filter={cat.id}
+          class:list={[
+            "px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-all duration-200 border cursor-pointer flex items-center gap-1.5 shrink-0",
+            idx === 0
+              ? "bg-brand-pink text-white border-brand-pink shadow-md shadow-pink-200 filter-active"
+              : "bg-white text-gray-700 border-pink-200 hover:border-brand-pink hover:text-brand-pink hover:bg-pink-50/50"
+          ]}
+        >
+          <span>{cat.icon}</span>
+          <span>{cat.name}</span>
+          <span class="text-[10px] px-1.5 py-0.2 rounded-full bg-black/10">
+            {cat.count}
+          </span>
+        </button>
+      ))}
+    </div>
+
+    <!-- Products Grid: 2 columns on mobile, up to 4 on xl -->
+    <div id="products-catalog-grid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
+      {PRODUCTS.map((product, idx) => (
+        <ProductCard 
+          product={product} 
+          class:list={[
+            "reveal-on-scroll",
+            idx % 4 === 1 ? "delay-100" : idx % 4 === 2 ? "delay-200" : idx % 4 === 3 ? "delay-300" : ""
+          ]}
+        />
+      ))}
+    </div>
+
+    <!-- Search/Empty Fallback -->
+    <div id="no-products-message" class="hidden text-center py-16">
+      <div class="w-16 h-16 rounded-full bg-pink-100 text-brand-pink mx-auto flex items-center justify-center text-2xl mb-4">
+        🔍
+      </div>
+      <h3 class="text-lg font-bold text-gray-900">No encontramos productos en esta categoría</h3>
+      <p class="text-sm text-gray-500 mt-1">Prueba seleccionando "Todos los Productos".</p>
+    </div>
+
+    <!-- Catalog Bottom Guarantee Banner -->
+    <div class="mt-16 bg-gradient-to-r from-pink-50 via-pink-100/50 to-pink-50 rounded-2xl p-6 sm:p-8 border border-pink-200/80 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left reveal-on-scroll">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-brand-pink text-white flex items-center justify-center text-2xl shrink-0 shadow-md">
+          💅
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-lg text-gray-900">¿No encuentras el tono o producto que buscas?</h4>
+          <p class="text-xs sm:text-sm text-gray-600 mt-0.5">Tenemos más de 300 referencias en catálogo. Escríbenos por WhatsApp y te enviamos fotos reales de stock.</p>
+        </div>
+      </div>
+      <a 
+        href={buildWhatsAppLink("Hola NJ Importaciones, busco un producto o tono específico")}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-brand-dark hover:bg-black text-white text-xs font-bold shadow-md hover:scale-105 transition-all"
+      >
+        <span>Consultar Stock Especial</span>
+        <svg class="w-4 h-4 text-brand-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Pure Vanilla JS Category Filter
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('[data-category-filter]');
+  const productCards = document.querySelectorAll<HTMLElement>('.product-card');
+  const noProductsMsg = document.getElementById('no-products-message');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedCategory = btn.getAttribute('data-category-filter');
+
+      // Update button styles
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-brand-pink', 'text-white', 'border-brand-pink', 'shadow-md', 'shadow-pink-200', 'filter-active');
+        b.classList.add('bg-white', 'text-gray-700', 'border-pink-200');
+      });
+
+      btn.classList.add('bg-brand-pink', 'text-white', 'border-brand-pink', 'shadow-md', 'shadow-pink-200', 'filter-active');
+      btn.classList.remove('bg-white', 'text-gray-700', 'border-pink-200');
+
+      let visibleCount = 0;
+
+      productCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (selectedCategory === 'todos' || cardCategory === selectedCategory) {
+          card.classList.remove('hidden');
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(8px)';
+          setTimeout(() => {
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 30);
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (noProductsMsg) {
+        if (visibleCount === 0) {
+          noProductsMsg.classList.remove('hidden');
+        } else {
+          noProductsMsg.classList.add('hidden');
+        }
+      }
+    });
+  });
+</script>

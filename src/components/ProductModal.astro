@@ -1,0 +1,270 @@
+---
+import { PRODUCTS } from '../data/products';
+import { formatPEN } from '../utils/format';
+---
+
+<!-- Quick View Modal (Vanilla JS) -->
+<div id="product-modal-container" class="fixed inset-0 z-50 pointer-events-none transition-all duration-300 hidden">
+  
+  <!-- Backdrop -->
+  <div 
+    id="product-modal-backdrop" 
+    class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-300 pointer-events-none cursor-pointer"
+  ></div>
+
+  <!-- Modal Dialog -->
+  <div class="absolute inset-0 flex items-center justify-center p-4 sm:p-6 overflow-y-auto pointer-events-none">
+    <div 
+      id="product-modal-card" 
+      class="w-full max-w-3xl bg-white rounded-3xl shadow-2xl border border-pink-100 overflow-hidden transform scale-95 opacity-0 transition-all duration-300 pointer-events-auto my-auto"
+    >
+      
+      <!-- Close Button -->
+      <button 
+        id="close-product-modal-btn"
+        type="button"
+        class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-gray-700 hover:text-black border border-gray-200 flex items-center justify-center shadow-md transition-colors cursor-pointer"
+        aria-label="Cerrar modal"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        
+        <!-- Product Image Showcase -->
+        <div class="relative bg-pink-50 p-6 flex items-center justify-center min-h-[300px] md:min-h-[420px]">
+          <img 
+            id="modal-product-img" 
+            src="/products/lipstick-matte.jpg" 
+            alt="Producto" 
+            class="max-h-72 md:max-h-88 w-auto object-contain rounded-2xl shadow-lg"
+          />
+          <span id="modal-product-discount" class="absolute top-4 left-4 bg-brand-rose text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">
+            -30% OFF
+          </span>
+          <span id="modal-product-badge" class="absolute bottom-4 left-4 bg-brand-dark/90 text-pink-200 border border-brand-pink/30 text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-sm">
+            MÁS VENDIDO
+          </span>
+        </div>
+
+        <!-- Product Details -->
+        <div class="p-6 sm:p-8 flex flex-col justify-between space-y-5">
+          <div>
+            <div class="flex items-center justify-between text-xs text-brand-pink font-semibold uppercase tracking-wider mb-1.5">
+              <span id="modal-product-category">Labiales</span>
+              <span id="modal-product-stock" class="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md font-medium">
+                En stock
+              </span>
+            </div>
+
+            <h3 id="modal-product-name" class="font-serif text-2xl font-bold text-gray-900 leading-snug">
+              Nombre del Producto
+            </h3>
+
+            <!-- Rating -->
+            <div class="flex items-center gap-2 my-2.5">
+              <span class="text-amber-400 text-sm">★★★★★</span>
+              <span id="modal-product-rating" class="text-xs font-bold text-gray-800">4.9</span>
+              <span id="modal-product-reviews" class="text-xs text-gray-400">(140 valoraciones)</span>
+            </div>
+
+            <!-- Price -->
+            <div class="flex items-baseline gap-3 my-3">
+              <span id="modal-product-price" class="text-3xl font-extrabold text-gray-900 font-sans">
+                S/ 0.00
+              </span>
+              <span id="modal-product-original-price" class="text-sm text-gray-400 line-through">
+                S/ 0.00
+              </span>
+            </div>
+
+            <!-- Description -->
+            <p id="modal-product-description" class="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+              Descripción del producto...
+            </p>
+
+            <!-- Benefits List -->
+            <div class="space-y-1.5 text-xs text-gray-700" id="modal-product-benefits">
+              <!-- Dynamically populated benefits -->
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="space-y-2.5 pt-4 border-t border-pink-100">
+            <button 
+              id="modal-add-to-cart-btn"
+              type="button"
+              class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-brand-pink to-pink-600 hover:from-pink-500 hover:to-pink-700 text-white font-bold text-sm tracking-wide shadow-md shadow-pink-200 active:scale-98 transition-all flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+              </svg>
+              <span>Añadir a mi Carrito</span>
+            </button>
+
+            <a 
+              id="modal-whatsapp-ask-btn"
+              href="https://wa.me/51912345678"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full py-2.5 px-4 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 font-semibold text-xs tracking-wide transition-colors flex items-center justify-center gap-2"
+            >
+              <span>Consultar tono y stock por WhatsApp</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  import { PRODUCTS, type Product } from '../data/products';
+  import { formatPEN, buildWhatsAppLink } from '../utils/format';
+
+  const modalContainer = document.getElementById('product-modal-container');
+  const modalBackdrop = document.getElementById('product-modal-backdrop');
+  const modalCard = document.getElementById('product-modal-card');
+  const closeBtn = document.getElementById('close-product-modal-btn');
+
+  let currentModalProduct: Product | null = null;
+
+  function openModal(productId: string) {
+    const product = PRODUCTS.find(p => p.id === productId);
+    if (!product) return;
+
+    currentModalProduct = product;
+
+    // Set DOM content
+    document.getElementById('modal-product-img')?.setAttribute('src', product.image);
+    document.getElementById('modal-product-img')?.setAttribute('alt', product.name);
+    
+    const nameEl = document.getElementById('modal-product-name');
+    if (nameEl) nameEl.textContent = product.name;
+
+    const catEl = document.getElementById('modal-product-category');
+    if (catEl) catEl.textContent = product.categoryName;
+
+    const priceEl = document.getElementById('modal-product-price');
+    if (priceEl) priceEl.textContent = formatPEN(product.price);
+
+    const origPriceEl = document.getElementById('modal-product-original-price');
+    if (origPriceEl) origPriceEl.textContent = formatPEN(product.originalPrice);
+
+    const discountEl = document.getElementById('modal-product-discount');
+    if (discountEl) discountEl.textContent = product.discount;
+
+    const descEl = document.getElementById('modal-product-description');
+    if (descEl) descEl.textContent = product.description;
+
+    const ratingEl = document.getElementById('modal-product-rating');
+    if (ratingEl) ratingEl.textContent = product.rating.toFixed(1);
+
+    const reviewsEl = document.getElementById('modal-product-reviews');
+    if (reviewsEl) reviewsEl.textContent = `(${product.reviewsCount} opiniones)`;
+
+    const badgeEl = document.getElementById('modal-product-badge');
+    if (badgeEl) {
+      if (product.badge) {
+        badgeEl.textContent = product.badge;
+        badgeEl.classList.remove('hidden');
+      } else {
+        badgeEl.classList.add('hidden');
+      }
+    }
+
+    const stockEl = document.getElementById('modal-product-stock');
+    if (stockEl) {
+      if (product.stock <= 5) {
+        stockEl.textContent = `¡Solo quedan ${product.stock} unidades!`;
+        stockEl.className = 'text-rose-700 bg-rose-50 px-2 py-0.5 rounded-md font-bold';
+      } else {
+        stockEl.textContent = `En stock (${product.stock} disponibles)`;
+        stockEl.className = 'text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md font-medium';
+      }
+    }
+
+    const benefitsEl = document.getElementById('modal-product-benefits');
+    if (benefitsEl) {
+      benefitsEl.innerHTML = '';
+      product.benefits.forEach(benefit => {
+        const item = document.createElement('div');
+        item.className = 'flex items-center gap-2 text-xs text-gray-700';
+        item.innerHTML = `
+          <svg class="w-3.5 h-3.5 text-brand-pink shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <span>${benefit}</span>
+        `;
+        benefitsEl.appendChild(item);
+      });
+    }
+
+    // Setup direct WhatsApp question link via canonical helper
+    const waBtn = document.getElementById('modal-whatsapp-ask-btn');
+    const waMsg = `¡Hola NJ Importaciones! Deseo consultar detalles sobre: ${product.name} (${formatPEN(product.price)}). ¿Tienen stock disponible?`;
+    waBtn?.setAttribute('href', buildWhatsAppLink(waMsg));
+
+    // Show modal
+    modalContainer?.classList.remove('hidden', 'pointer-events-none');
+    document.body.style.overflow = 'hidden';
+
+    requestAnimationFrame(() => {
+      modalBackdrop?.classList.remove('opacity-0', 'pointer-events-none');
+      modalBackdrop?.classList.add('opacity-100');
+      modalCard?.classList.remove('scale-95', 'opacity-0');
+      modalCard?.classList.add('scale-100', 'opacity-100');
+    });
+  }
+
+  function closeModal() {
+    document.body.style.overflow = '';
+    modalBackdrop?.classList.add('opacity-0', 'pointer-events-none');
+    modalBackdrop?.classList.remove('opacity-100');
+    modalCard?.classList.add('scale-95', 'opacity-0');
+    modalCard?.classList.remove('scale-100', 'opacity-100');
+    setTimeout(() => {
+      modalContainer?.classList.add('hidden', 'pointer-events-none');
+    }, 300);
+  }
+
+  // Quick view triggers
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest('[data-quick-view-btn]');
+    if (btn) {
+      const id = btn.getAttribute('data-quick-view-btn') || '';
+      openModal(id);
+    }
+  });
+
+  closeBtn?.addEventListener('click', closeModal);
+  modalBackdrop?.addEventListener('click', closeModal);
+
+  // Add to cart from modal via clean CustomEvent (Code Judo decoupling)
+  document.getElementById('modal-add-to-cart-btn')?.addEventListener('click', () => {
+    if (!currentModalProduct) return;
+    
+    window.dispatchEvent(new CustomEvent('cart:add-item', {
+      detail: {
+        id: currentModalProduct.id,
+        name: currentModalProduct.name,
+        price: currentModalProduct.price,
+        image: currentModalProduct.image,
+        category: currentModalProduct.categoryName,
+        quantity: 1
+      }
+    }));
+
+    closeModal();
+  });
+
+  // Close on Escape
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>

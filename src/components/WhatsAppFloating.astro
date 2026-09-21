@@ -1,0 +1,37 @@
+---
+import IconWhatsApp from '../assets/icons/IconWhatsApp.astro';
+import { buildWhatsAppLink } from '../utils/format';
+---
+
+<!-- Floating WhatsApp Action (Compact & Non-intrusive on Mobile) -->
+<div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center gap-3 pointer-events-auto">
+  
+  <!-- Helper Tooltip Speech Bubble (Only on desktop lg to prevent mobile occlusion) -->
+  <div 
+    id="wa-tooltip" 
+    class="hidden lg:flex items-center gap-2 bg-white text-gray-800 text-xs font-semibold py-2 px-3.5 rounded-2xl shadow-xl border border-pink-100 cursor-pointer hover:border-brand-pink transition-colors"
+  >
+    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+    <span>¿Dudas con los tonos o tu pedido? <strong>¡Escríbenos!</strong></span>
+  </div>
+
+  <!-- Main Floating Button -->
+  <a 
+    href={buildWhatsAppLink("Hola NJ Importaciones, quisiera asesoría sobre los cosméticos")} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="relative group w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-xl shadow-emerald-900/40 hover:scale-108 active:scale-95 transition-all duration-300 cursor-pointer"
+    aria-label="Contactar por WhatsApp a NJ Importaciones"
+  >
+    <!-- Gentle pulse ring -->
+    <span class="absolute inset-0 rounded-full bg-emerald-400 opacity-60 animate-ping -z-10"></span>
+    
+    <IconWhatsApp size={28} class="sm:scale-115" />
+
+    <!-- Unread Notification Badge -->
+    <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-rose-500 text-white text-[10px] font-extrabold flex items-center justify-center ring-2 ring-white">
+      1
+    </span>
+  </a>
+
+</div>

@@ -1,0 +1,10 @@
+<svg width="96" height="48" viewBox="0 0 96 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Titular de cuenta</title>
+  <rect width="96" height="48" rx="14" fill="#263238"/>
+  <rect x="10" y="10" width="36" height="28" rx="8" fill="#36FFC4" fill-opacity=".18" stroke="#36FFC4" stroke-width="2"/>
+  <circle cx="28" cy="21" r="5" fill="#36FFC4"/>
+  <path d="M18 32C19.9 28.7 23.3 27 28 27C32.7 27 36.1 28.7 38 32" stroke="#36FFC4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M55 17H80" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 25H86" stroke="white" stroke-opacity=".85" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 33H73" stroke="white" stroke-opacity=".65" stroke-width="4" stroke-linecap="round"/>
+</svg>

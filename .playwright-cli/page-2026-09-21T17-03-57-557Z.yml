@@ -1,0 +1,787 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e4]:
+    - generic [ref=f4e5]: ✨ ENVIOS GRATIS
+    - generic [ref=f4e6]: desde S/ 99.00
+    - generic [ref=f4e7]: Paga con Yape
+  - banner [ref=f4e8]:
+    - generic [ref=f4e10]:
+      - link "NJ Importaciones Logo NJ ♥ Importaciones" [ref=f4e11] [cursor=pointer]:
+        - /url: /
+        - img "NJ Importaciones Logo" [ref=f4e13]
+        - generic [ref=f4e14]:
+          - generic [ref=f4e15]:
+            - generic [ref=f4e16]: NJ
+            - generic [ref=f4e17]: ♥
+          - generic [ref=f4e18]: Importaciones
+      - generic [ref=f4e19]:
+        - button "Ver carrito de compras" [ref=f4e20] [cursor=pointer]:
+          - generic [ref=f4e24]: "0"
+        - button "Abrir menú de navegación" [ref=f4e25] [cursor=pointer]
+  - main [ref=f4e28]:
+    - generic [ref=f4e31]:
+      - generic [ref=f4e33]:
+        - img "NJ Importaciones Logo Oficial" [ref=f4e36]
+        - generic [ref=f4e37]:
+          - generic [ref=f4e38]: "%"
+          - generic [ref=f4e39]:
+            - paragraph [ref=f4e40]: Descuentos
+            - paragraph [ref=f4e41]: Hasta 35% OFF
+        - generic [ref=f4e42]:
+          - generic [ref=f4e43]: YAPE
+          - generic [ref=f4e44]:
+            - paragraph [ref=f4e45]: Paga con Yape
+            - paragraph [ref=f4e46]: Sin comisiones
+        - generic [ref=f4e47]:
+          - generic [ref=f4e48]: 💄 Labiales
+          - generic [ref=f4e49]: •
+          - generic [ref=f4e50]: 💅 Esmaltes
+          - generic [ref=f4e51]: •
+          - generic [ref=f4e52]: 🌸 Skincare
+      - generic [ref=f4e53]:
+        - generic [ref=f4e54]: COLECCIÓN 2026 • COSMÉTICOS ORIGINALES
+        - heading "Realza tu belleza con estilo, brillo y elegancia" [level=1] [ref=f4e57]
+        - paragraph [ref=f4e58]:
+          - text: Encuentra en
+          - strong [ref=f4e59]: NJ Importaciones
+          - text: "lo último en cosmética femenina: esmaltes en gel, labiales mate intransferibles y serums faciales con envíos rápidos a todo el Perú."
+        - generic [ref=f4e60]:
+          - generic [ref=f4e64]:
+            - text: Paga con
+            - strong [ref=f4e65]: Yape & Tarjetas
+          - generic [ref=f4e69]:
+            - text: Envíos a
+            - strong [ref=f4e70]: todo el Perú
+          - generic [ref=f4e74]:
+            - text: Garantía
+            - strong [ref=f4e75]: 100% Original
+        - generic [ref=f4e76]:
+          - link "Ver Catálogo" [ref=f4e77] [cursor=pointer]:
+            - /url: "#catalogo"
+          - link "⚡ Ofertas (-35%)" [ref=f4e81] [cursor=pointer]:
+            - /url: "#ofertas"
+            - generic [ref=f4e82]: ⚡
+            - generic [ref=f4e83]: Ofertas (-35%)
+          - link "Pedir por WhatsApp" [ref=f4e84] [cursor=pointer]:
+            - /url: https://wa.me/51912345678?text=Hola%20NJ%20Importaciones%2C%20deseo%20hacer%20un%20pedido
+        - generic [ref=f4e88]:
+          - generic [ref=f4e89]:
+            - paragraph [ref=f4e90]: +5,000
+            - paragraph [ref=f4e91]: Clientas
+          - generic [ref=f4e92]:
+            - paragraph [ref=f4e93]: 100%
+            - paragraph [ref=f4e94]: Original
+          - generic [ref=f4e95]:
+            - paragraph [ref=f4e96]: 4.9 ★
+            - paragraph [ref=f4e97]: Opiniones
+    - generic [ref=f4e99]:
+      - generic [ref=f4e100]:
+        - generic [ref=f4e101]: Variedad & Tendencias
+        - heading "Explora Nuestras Categorías" [level=2] [ref=f4e103]
+        - paragraph [ref=f4e104]: Tenemos todo lo que necesitas para tu rutina de belleza diaria y profesional.
+      - generic [ref=f4e105]:
+        - link "Labiales & Gloss Tendencia 15+ modelos Labiales & Gloss" [ref=f4e106] [cursor=pointer]:
+          - /url: "#catalogo"
+          - img "Labiales & Gloss" [ref=f4e107]
+          - generic [ref=f4e109]: Tendencia
+          - generic [ref=f4e111]:
+            - generic [ref=f4e112]: 15+ modelos
+            - heading "Labiales & Gloss" [level=3] [ref=f4e114]
+        - link "Pintauñas & Esmaltes Top Ventas 24+ tonos Pintauñas & Esmaltes" [ref=f4e115] [cursor=pointer]:
+          - /url: "#catalogo"
+          - img "Pintauñas & Esmaltes" [ref=f4e116]
+          - generic [ref=f4e118]: Top Ventas
+          - generic [ref=f4e120]:
+            - generic [ref=f4e121]: 24+ tonos
+            - heading "Pintauñas & Esmaltes" [level=3] [ref=f4e123]
+        - link "Cremas & Skincare Cuidado Facial 18+ fórmulas Cremas & Skincare" [ref=f4e124] [cursor=pointer]:
+          - /url: "#catalogo"
+          - img "Cremas & Skincare" [ref=f4e125]
+          - generic [ref=f4e127]: Cuidado Facial
+          - generic [ref=f4e129]:
+            - generic [ref=f4e130]: 18+ fórmulas
+            - heading "Cremas & Skincare" [level=3] [ref=f4e132]
+        - link "Maquillaje Rostro Alta Cobertura 20+ opciones Maquillaje Rostro" [ref=f4e133] [cursor=pointer]:
+          - /url: "#catalogo"
+          - img "Maquillaje Rostro" [ref=f4e134]
+          - generic [ref=f4e136]: Alta Cobertura
+          - generic [ref=f4e138]:
+            - generic [ref=f4e139]: 20+ opciones
+            - heading "Maquillaje Rostro" [level=3] [ref=f4e141]
+        - link "Sombras & Pestañas Mirada Impacto 12+ paletas Sombras & Pestañas" [ref=f4e142] [cursor=pointer]:
+          - /url: "#catalogo"
+          - img "Sombras & Pestañas" [ref=f4e143]
+          - generic [ref=f4e145]: Mirada Impacto
+          - generic [ref=f4e147]:
+            - generic [ref=f4e148]: 12+ paletas
+            - heading "Sombras & Pestañas" [level=3] [ref=f4e150]
+        - link "Brochas & Accesorios Edición Especial Kits de lujo Brochas & Accesorios" [ref=f4e151] [cursor=pointer]:
+          - /url: "#catalogo"
+          - img "Brochas & Accesorios" [ref=f4e152]
+          - generic [ref=f4e154]: Edición Especial
+          - generic [ref=f4e156]:
+            - generic [ref=f4e157]: Kits de lujo
+            - heading "Brochas & Accesorios" [level=3] [ref=f4e159]
+    - generic [ref=f4e161]:
+      - generic [ref=f4e164]:
+        - generic [ref=f4e165]:
+          - generic [ref=f4e166]: VENTA FLASH DE TEMPORADA
+          - heading "Descuentos Exclusivos por Tiempo Limitado" [level=2] [ref=f4e169]
+          - paragraph [ref=f4e170]:
+            - text: Aprovecha hasta un
+            - strong [ref=f4e171]: 35% de descuento
+            - text: en nuestros cosméticos y esmaltes más vendidos. Stock limitado por lanzamiento.
+        - generic [ref=f4e172]:
+          - generic [ref=f4e173]: "La oferta termina en:"
+          - generic [ref=f4e176]:
+            - generic [ref=f4e177]:
+              - text: "08"
+              - generic [ref=f4e178]: Horas
+            - generic [ref=f4e179]: ":"
+            - generic [ref=f4e180]:
+              - text: "45"
+              - generic [ref=f4e181]: Minutos
+            - generic [ref=f4e182]: ":"
+            - generic [ref=f4e183]:
+              - text: "30"
+              - generic [ref=f4e184]: Segundos
+      - generic [ref=f4e185]:
+        - generic [ref=f4e186]:
+          - generic [ref=f4e187]:
+            - generic [ref=f4e188]:
+              - img "Labial Líquido Velvet Matte 24H" [ref=f4e189]
+              - generic [ref=f4e190]: "-31%"
+              - button "Vista rápida de Labial Líquido Velvet Matte 24H" [ref=f4e191] [cursor=pointer]
+            - generic [ref=f4e195]:
+              - generic [ref=f4e196]: Labiales & Gloss
+              - generic [ref=f4e197]: Stock (6)
+            - heading "Labial Líquido Velvet Matte 24H" [level=3] [ref=f4e199]
+            - generic [ref=f4e200]:
+              - generic [ref=f4e201]: ★★★★
+              - generic [ref=f4e202]: "4.9"
+              - generic [ref=f4e203]: (142)
+          - generic [ref=f4e204]:
+            - generic [ref=f4e205]:
+              - generic [ref=f4e206]: S/ 32.90
+              - generic [ref=f4e207]: S/ 48.00
+            - button "Añadir" [ref=f4e209] [cursor=pointer]
+        - generic [ref=f4e213]:
+          - generic [ref=f4e214]:
+            - generic [ref=f4e215]:
+              - img "Set Esmaltes Gel Polish UV Secado Rápido (Pack 4)" [ref=f4e216]
+              - generic [ref=f4e217]: "-33%"
+              - button "Vista rápida de Set Esmaltes Gel Polish UV Secado Rápido (Pack 4)" [ref=f4e218] [cursor=pointer]
+            - generic [ref=f4e222]:
+              - generic [ref=f4e223]: Esmaltes & Uñas
+              - generic [ref=f4e224]: ¡Quedan 4!
+            - heading "Set Esmaltes Gel Polish UV Secado Rápido (Pack 4)" [level=3] [ref=f4e226]
+            - generic [ref=f4e227]:
+              - generic [ref=f4e228]: ★★★★
+              - generic [ref=f4e229]: "4.9"
+              - generic [ref=f4e230]: (112)
+          - generic [ref=f4e231]:
+            - generic [ref=f4e232]:
+              - generic [ref=f4e233]: S/ 49.90
+              - generic [ref=f4e234]: S/ 75.00
+            - button "Añadir" [ref=f4e236] [cursor=pointer]
+        - generic [ref=f4e240]:
+          - generic [ref=f4e241]:
+            - generic [ref=f4e242]:
+              - img "Serum Facial Concentrado Vitamina C + Ácido Hialurónico" [ref=f4e243]
+              - generic [ref=f4e244]: "-35%"
+              - button "Vista rápida de Serum Facial Concentrado Vitamina C + Ácido Hialurónico" [ref=f4e245] [cursor=pointer]
+            - generic [ref=f4e249]:
+              - generic [ref=f4e250]: Cuidado Facial & Skincare
+              - generic [ref=f4e251]: ¡Quedan 5!
+            - heading "Serum Facial Concentrado Vitamina C + Ácido Hialurónico" [level=3] [ref=f4e253]
+            - generic [ref=f4e254]:
+              - generic [ref=f4e255]: ★★★★★
+              - generic [ref=f4e256]: "5.0"
+              - generic [ref=f4e257]: (203)
+          - generic [ref=f4e258]:
+            - generic [ref=f4e259]:
+              - generic [ref=f4e260]: S/ 54.90
+              - generic [ref=f4e261]: S/ 85.00
+            - button "Añadir" [ref=f4e263] [cursor=pointer]
+        - generic [ref=f4e267]:
+          - generic [ref=f4e268]:
+            - generic [ref=f4e269]:
+              - img "Rubor Líquido Soft Glow Rosa Radiante" [ref=f4e270]
+              - generic [ref=f4e271]: "-29%"
+              - button "Vista rápida de Rubor Líquido Soft Glow Rosa Radiante" [ref=f4e272] [cursor=pointer]
+            - generic [ref=f4e276]:
+              - generic [ref=f4e277]: Maquillaje Rostro
+              - generic [ref=f4e278]: Stock (8)
+            - heading "Rubor Líquido Soft Glow Rosa Radiante" [level=3] [ref=f4e280]
+            - generic [ref=f4e281]:
+              - generic [ref=f4e282]: ★★★★
+              - generic [ref=f4e283]: "4.9"
+              - generic [ref=f4e284]: (118)
+          - generic [ref=f4e285]:
+            - generic [ref=f4e286]:
+              - generic [ref=f4e287]: S/ 34.00
+              - generic [ref=f4e288]: S/ 48.00
+            - button "Añadir" [ref=f4e290] [cursor=pointer]
+    - generic [ref=f4e295]:
+      - generic [ref=f4e296]:
+        - generic [ref=f4e297]: Catálogo 100% Original
+        - heading "Nuestros Cosméticos Destacados" [level=2] [ref=f4e299]
+        - paragraph [ref=f4e300]: Fórmulas de calidad internacional, alta pigmentación y cuidado delicado para cada tipo de piel.
+      - generic [ref=f4e301]:
+        - button "✨ Todos los Productos 12" [ref=f4e302] [cursor=pointer]:
+          - generic [ref=f4e303]: ✨
+          - generic [ref=f4e304]: Todos los Productos
+          - generic [ref=f4e305]: "12"
+        - button "💄 Labiales & Gloss 2" [ref=f4e306] [cursor=pointer]:
+          - generic [ref=f4e307]: 💄
+          - generic [ref=f4e308]: Labiales & Gloss
+          - generic [ref=f4e309]: "2"
+        - button "💅 Esmaltes & Pintauñas 2" [ref=f4e310] [cursor=pointer]:
+          - generic [ref=f4e311]: 💅
+          - generic [ref=f4e312]: Esmaltes & Pintauñas
+          - generic [ref=f4e313]: "2"
+        - button "🌸 Cremas & Skincare 4" [ref=f4e314] [cursor=pointer]:
+          - generic [ref=f4e315]: 🌸
+          - generic [ref=f4e316]: Cremas & Skincare
+          - generic [ref=f4e317]: "4"
+        - button "✨ Maquillaje Rostro 2" [ref=f4e318] [cursor=pointer]:
+          - generic [ref=f4e319]: ✨
+          - generic [ref=f4e320]: Maquillaje Rostro
+          - generic [ref=f4e321]: "2"
+        - button "👁️ Sombras & Ojos 2" [ref=f4e322] [cursor=pointer]:
+          - generic [ref=f4e323]: 👁️
+          - generic [ref=f4e324]: Sombras & Ojos
+          - generic [ref=f4e325]: "2"
+      - generic [ref=f4e326]:
+        - generic [ref=f4e327]:
+          - generic [ref=f4e328]:
+            - generic [ref=f4e329]:
+              - img "Labial Líquido Velvet Matte 24H" [ref=f4e330]
+              - generic [ref=f4e331]: "-31%"
+              - button "Vista rápida de Labial Líquido Velvet Matte 24H" [ref=f4e332] [cursor=pointer]
+            - generic [ref=f4e336]:
+              - generic [ref=f4e337]: Labiales & Gloss
+              - generic [ref=f4e338]: Stock (6)
+            - heading "Labial Líquido Velvet Matte 24H" [level=3] [ref=f4e340]
+            - generic [ref=f4e341]:
+              - generic [ref=f4e342]: ★★★★
+              - generic [ref=f4e343]: "4.9"
+              - generic [ref=f4e344]: (142)
+          - generic [ref=f4e345]:
+            - generic [ref=f4e346]:
+              - generic [ref=f4e347]: S/ 32.90
+              - generic [ref=f4e348]: S/ 48.00
+            - button "Añadir" [ref=f4e350] [cursor=pointer]
+        - generic [ref=f4e354]:
+          - generic [ref=f4e355]:
+            - generic [ref=f4e356]:
+              - img "Lip Gloss Cristal Voluminizador Hidratante" [ref=f4e357]
+              - generic [ref=f4e358]: "-30%"
+              - button "Vista rápida de Lip Gloss Cristal Voluminizador Hidratante" [ref=f4e359] [cursor=pointer]
+            - generic [ref=f4e363]:
+              - generic [ref=f4e364]: Labiales & Gloss
+              - generic [ref=f4e365]: Stock (9)
+            - heading "Lip Gloss Cristal Voluminizador Hidratante" [level=3] [ref=f4e367]
+            - generic [ref=f4e368]:
+              - generic [ref=f4e369]: ★★★★
+              - generic [ref=f4e370]: "4.8"
+              - generic [ref=f4e371]: (89)
+          - generic [ref=f4e372]:
+            - generic [ref=f4e373]:
+              - generic [ref=f4e374]: S/ 26.50
+              - generic [ref=f4e375]: S/ 38.00
+            - button "Añadir" [ref=f4e377] [cursor=pointer]
+        - generic [ref=f4e381]:
+          - generic [ref=f4e382]:
+            - generic [ref=f4e383]:
+              - img "Set Esmaltes Gel Polish UV Secado Rápido (Pack 4)" [ref=f4e384]
+              - generic [ref=f4e385]: "-33%"
+              - button "Vista rápida de Set Esmaltes Gel Polish UV Secado Rápido (Pack 4)" [ref=f4e386] [cursor=pointer]
+            - generic [ref=f4e390]:
+              - generic [ref=f4e391]: Esmaltes & Uñas
+              - generic [ref=f4e392]: ¡Quedan 4!
+            - heading "Set Esmaltes Gel Polish UV Secado Rápido (Pack 4)" [level=3] [ref=f4e394]
+            - generic [ref=f4e395]:
+              - generic [ref=f4e396]: ★★★★
+              - generic [ref=f4e397]: "4.9"
+              - generic [ref=f4e398]: (112)
+          - generic [ref=f4e399]:
+            - generic [ref=f4e400]:
+              - generic [ref=f4e401]: S/ 49.90
+              - generic [ref=f4e402]: S/ 75.00
+            - button "Añadir" [ref=f4e404] [cursor=pointer]
+        - generic [ref=f4e408]:
+          - generic [ref=f4e409]:
+            - generic [ref=f4e410]:
+              - img "Esmalte Efecto Gel Diamond Shine 15ml" [ref=f4e411]
+              - generic [ref=f4e412]: "-30%"
+              - button "Vista rápida de Esmalte Efecto Gel Diamond Shine 15ml" [ref=f4e413] [cursor=pointer]
+            - generic [ref=f4e417]:
+              - generic [ref=f4e418]: Esmaltes & Uñas
+              - generic [ref=f4e419]: Stock (15)
+            - heading "Esmalte Efecto Gel Diamond Shine 15ml" [level=3] [ref=f4e421]
+            - generic [ref=f4e422]:
+              - generic [ref=f4e423]: ★★★★
+              - generic [ref=f4e424]: "4.7"
+              - generic [ref=f4e425]: (64)
+          - generic [ref=f4e426]:
+            - generic [ref=f4e427]:
+              - generic [ref=f4e428]: S/ 18.00
+              - generic [ref=f4e429]: S/ 26.00
+            - button "Añadir" [ref=f4e431] [cursor=pointer]
+        - generic [ref=f4e435]:
+          - generic [ref=f4e436]:
+            - generic [ref=f4e437]:
+              - img "Serum Facial Concentrado Vitamina C + Ácido Hialurónico" [ref=f4e438]
+              - generic [ref=f4e439]: "-35%"
+              - button "Vista rápida de Serum Facial Concentrado Vitamina C + Ácido Hialurónico" [ref=f4e440] [cursor=pointer]
+            - generic [ref=f4e444]:
+              - generic [ref=f4e445]: Cuidado Facial & Skincare
+              - generic [ref=f4e446]: ¡Quedan 5!
+            - heading "Serum Facial Concentrado Vitamina C + Ácido Hialurónico" [level=3] [ref=f4e448]
+            - generic [ref=f4e449]:
+              - generic [ref=f4e450]: ★★★★★
+              - generic [ref=f4e451]: "5.0"
+              - generic [ref=f4e452]: (203)
+          - generic [ref=f4e453]:
+            - generic [ref=f4e454]:
+              - generic [ref=f4e455]: S/ 54.90
+              - generic [ref=f4e456]: S/ 85.00
+            - button "Añadir" [ref=f4e458] [cursor=pointer]
+        - generic [ref=f4e462]:
+          - generic [ref=f4e463]:
+            - generic [ref=f4e464]:
+              - img "Crema Hidratante Facial Reafirmante Colágeno & Ceramidas" [ref=f4e465]
+              - generic [ref=f4e466]: "-30%"
+              - button "Vista rápida de Crema Hidratante Facial Reafirmante Colágeno & Ceramidas" [ref=f4e467] [cursor=pointer]
+            - generic [ref=f4e471]:
+              - generic [ref=f4e472]: Cuidado Facial & Skincare
+              - generic [ref=f4e473]: Stock (8)
+            - heading "Crema Hidratante Facial Reafirmante Colágeno & Ceramidas" [level=3] [ref=f4e475]
+            - generic [ref=f4e476]:
+              - generic [ref=f4e477]: ★★★★
+              - generic [ref=f4e478]: "4.8"
+              - generic [ref=f4e479]: (97)
+          - generic [ref=f4e480]:
+            - generic [ref=f4e481]:
+              - generic [ref=f4e482]: S/ 48.00
+              - generic [ref=f4e483]: S/ 69.00
+            - button "Añadir" [ref=f4e485] [cursor=pointer]
+        - generic [ref=f4e489]:
+          - generic [ref=f4e490]:
+            - generic [ref=f4e491]:
+              - img "Protector Solar Facial Invisible FPS 50+ Velvet Touch" [ref=f4e492]
+              - generic [ref=f4e493]: "-28%"
+              - button "Vista rápida de Protector Solar Facial Invisible FPS 50+ Velvet Touch" [ref=f4e494] [cursor=pointer]
+            - generic [ref=f4e498]:
+              - generic [ref=f4e499]: Cuidado Facial & Skincare
+              - generic [ref=f4e500]: Stock (7)
+            - heading "Protector Solar Facial Invisible FPS 50+ Velvet Touch" [level=3] [ref=f4e502]
+            - generic [ref=f4e503]:
+              - generic [ref=f4e504]: ★★★★
+              - generic [ref=f4e505]: "4.9"
+              - generic [ref=f4e506]: (165)
+          - generic [ref=f4e507]:
+            - generic [ref=f4e508]:
+              - generic [ref=f4e509]: S/ 52.00
+              - generic [ref=f4e510]: S/ 72.00
+            - button "Añadir" [ref=f4e512] [cursor=pointer]
+        - generic [ref=f4e516]:
+          - generic [ref=f4e517]:
+            - generic [ref=f4e518]:
+              - img "Rubor Líquido Soft Glow Rosa Radiante" [ref=f4e519]
+              - generic [ref=f4e520]: "-29%"
+              - button "Vista rápida de Rubor Líquido Soft Glow Rosa Radiante" [ref=f4e521] [cursor=pointer]
+            - generic [ref=f4e525]:
+              - generic [ref=f4e526]: Maquillaje Rostro
+              - generic [ref=f4e527]: Stock (8)
+            - heading "Rubor Líquido Soft Glow Rosa Radiante" [level=3] [ref=f4e529]
+            - generic [ref=f4e530]:
+              - generic [ref=f4e531]: ★★★★
+              - generic [ref=f4e532]: "4.9"
+              - generic [ref=f4e533]: (118)
+          - generic [ref=f4e534]:
+            - generic [ref=f4e535]:
+              - generic [ref=f4e536]: S/ 34.00
+              - generic [ref=f4e537]: S/ 48.00
+            - button "Añadir" [ref=f4e539] [cursor=pointer]
+        - generic [ref=f4e543]:
+          - generic [ref=f4e544]:
+            - generic [ref=f4e545]:
+              - img "Paleta de Sombras 'Rose Luxe' 18 Tonos" [ref=f4e546]
+              - generic [ref=f4e547]: "-33%"
+              - button "Vista rápida de Paleta de Sombras 'Rose Luxe' 18 Tonos" [ref=f4e548] [cursor=pointer]
+            - generic [ref=f4e552]:
+              - generic [ref=f4e553]: Sombras & Ojos
+              - generic [ref=f4e554]: ¡Quedan 3!
+            - heading "Paleta de Sombras 'Rose Luxe' 18 Tonos" [level=3] [ref=f4e556]
+            - generic [ref=f4e557]:
+              - generic [ref=f4e558]: ★★★★★
+              - generic [ref=f4e559]: "5.0"
+              - generic [ref=f4e560]: (184)
+          - generic [ref=f4e561]:
+            - generic [ref=f4e562]:
+              - generic [ref=f4e563]: S/ 59.90
+              - generic [ref=f4e564]: S/ 89.00
+            - button "Añadir" [ref=f4e566] [cursor=pointer]
+        - generic [ref=f4e570]:
+          - generic [ref=f4e571]:
+            - generic [ref=f4e572]:
+              - img "Máscara de Pestañas Volume & Length Waterproof" [ref=f4e573]
+              - generic [ref=f4e574]: "-30%"
+              - button "Vista rápida de Máscara de Pestañas Volume & Length Waterproof" [ref=f4e575] [cursor=pointer]
+            - generic [ref=f4e579]:
+              - generic [ref=f4e580]: Sombras & Ojos
+              - generic [ref=f4e581]: Stock (12)
+            - heading "Máscara de Pestañas Volume & Length Waterproof" [level=3] [ref=f4e583]
+            - generic [ref=f4e584]:
+              - generic [ref=f4e585]: ★★★★
+              - generic [ref=f4e586]: "4.8"
+              - generic [ref=f4e587]: (129)
+          - generic [ref=f4e588]:
+            - generic [ref=f4e589]:
+              - generic [ref=f4e590]: S/ 31.00
+              - generic [ref=f4e591]: S/ 44.00
+            - button "Añadir" [ref=f4e593] [cursor=pointer]
+        - generic [ref=f4e597]:
+          - generic [ref=f4e598]:
+            - generic [ref=f4e599]:
+              - img "Set Profesional 12 Brochas Rose Gold + Neceser" [ref=f4e600]
+              - generic [ref=f4e601]: "-34%"
+              - button "Vista rápida de Set Profesional 12 Brochas Rose Gold + Neceser" [ref=f4e602] [cursor=pointer]
+            - generic [ref=f4e606]:
+              - generic [ref=f4e607]: Maquillaje Rostro
+              - generic [ref=f4e608]: ¡Quedan 5!
+            - heading "Set Profesional 12 Brochas Rose Gold + Neceser" [level=3] [ref=f4e610]
+            - generic [ref=f4e611]:
+              - generic [ref=f4e612]: ★★★★
+              - generic [ref=f4e613]: "4.9"
+              - generic [ref=f4e614]: (91)
+          - generic [ref=f4e615]:
+            - generic [ref=f4e616]:
+              - generic [ref=f4e617]: S/ 65.00
+              - generic [ref=f4e618]: S/ 99.00
+            - button "Añadir" [ref=f4e620] [cursor=pointer]
+        - generic [ref=f4e624]:
+          - generic [ref=f4e625]:
+            - generic [ref=f4e626]:
+              - img "Mascarilla Nocturna Facial Reparadora de Rosas" [ref=f4e627]
+              - generic [ref=f4e628]: "-31%"
+              - button "Vista rápida de Mascarilla Nocturna Facial Reparadora de Rosas" [ref=f4e629] [cursor=pointer]
+            - generic [ref=f4e633]:
+              - generic [ref=f4e634]: Cuidado Facial & Skincare
+              - generic [ref=f4e635]: Stock (6)
+            - heading "Mascarilla Nocturna Facial Reparadora de Rosas" [level=3] [ref=f4e637]
+            - generic [ref=f4e638]:
+              - generic [ref=f4e639]: ★★★★
+              - generic [ref=f4e640]: "4.8"
+              - generic [ref=f4e641]: (76)
+          - generic [ref=f4e642]:
+            - generic [ref=f4e643]:
+              - generic [ref=f4e644]: S/ 39.90
+              - generic [ref=f4e645]: S/ 58.00
+            - button "Añadir" [ref=f4e647] [cursor=pointer]
+      - generic [ref=f4e651]:
+        - generic [ref=f4e652]:
+          - generic [ref=f4e653]: 💅
+          - generic [ref=f4e654]:
+            - heading "¿No encuentras el tono o producto que buscas?" [level=4] [ref=f4e655]
+            - paragraph [ref=f4e656]: Tenemos más de 300 referencias en catálogo. Escríbenos por WhatsApp y te enviamos fotos reales de stock.
+        - link "Consultar Stock Especial" [ref=f4e657] [cursor=pointer]:
+          - /url: https://wa.me/51912345678?text=Hola%20NJ%20Importaciones%2C%20busco%20un%20producto%20o%20tono%20espec%C3%ADfico
+    - generic [ref=f4e662]:
+      - generic [ref=f4e663]:
+        - generic [ref=f4e664]: Compra 100% Segura
+        - heading "Paga Fácil con Yape, Tarjetas y Transferencias" [level=2] [ref=f4e666]
+        - paragraph [ref=f4e667]: Disfruta de una experiencia de compra rápida, transparente y sin comisiones ocultas. Aceptamos tus medios de pago favoritos en Perú.
+      - generic [ref=f4e668]:
+        - generic [ref=f4e669]:
+          - generic [ref=f4e670]: Más Utilizado en Perú
+          - generic [ref=f4e671]:
+            - img "Logo Yape" [ref=f4e673]
+            - heading "Paga con Yape" [level=3] [ref=f4e674]
+            - paragraph [ref=f4e675]: Transfiere al instante escaneando nuestro código QR o digitando nuestro número autorizado al momento de coordinar tu pedido.
+            - list [ref=f4e676]:
+              - listitem [ref=f4e677]:
+                - generic [ref=f4e680]: Confirmación inmediata de tu pago
+              - listitem [ref=f4e681]:
+                - generic [ref=f4e684]: Cero comisiones o recargos
+              - listitem [ref=f4e685]:
+                - generic [ref=f4e688]: Compatible con Yape con BCP o DNI
+          - generic [ref=f4e689]:
+            - generic [ref=f4e690]: Disponible 24/7
+            - generic [ref=f4e691]: Aprobación Express ⚡
+        - generic [ref=f4e692]:
+          - generic [ref=f4e693]:
+            - heading "Todas las Tarjetas" [level=3] [ref=f4e697]
+            - paragraph [ref=f4e698]: Aceptamos tarjetas de débito y crédito nacionales e internacionales con cifrado bancario seguro.
+            - generic [ref=f4e699]:
+              - generic [ref=f4e700]: VISA
+              - generic [ref=f4e701]: Mastercard
+              - generic [ref=f4e702]: Amex
+              - generic [ref=f4e703]: Diners
+            - list [ref=f4e704]:
+              - listitem [ref=f4e705]:
+                - generic [ref=f4e708]: Pago seguro con link protegido
+              - listitem [ref=f4e709]:
+                - generic [ref=f4e712]: Acepta tarjetas de cualquier banco peruano
+              - listitem [ref=f4e713]:
+                - generic [ref=f4e716]: Sin costos adicionales por pasarela
+          - generic [ref=f4e717]:
+            - generic [ref=f4e718]: Cifrado SSL 256-bit
+            - generic [ref=f4e719]: 100% Protegido
+        - generic [ref=f4e720]:
+          - generic [ref=f4e721]:
+            - img "BCP" [ref=f4e723]
+            - heading "BCP & Interbancario CCI" [level=3] [ref=f4e724]
+            - paragraph [ref=f4e725]: Realiza transferencias directas desde banca móvil o agentes autorizados. Ideal para compras por mayor y envíos a provincia.
+            - generic [ref=f4e726]:
+              - img "CCI" [ref=f4e727]
+              - generic [ref=f4e728]: + Cualquier banco nacional
+            - list [ref=f4e729]:
+              - listitem [ref=f4e730]:
+                - generic [ref=f4e733]: Transferencias directas sin recargo
+              - listitem [ref=f4e734]:
+                - generic [ref=f4e737]: Envío de voucher por WhatsApp
+              - listitem [ref=f4e738]:
+                - generic [ref=f4e741]: Despacho el mismo día de confirmación
+          - generic [ref=f4e742]:
+            - generic [ref=f4e743]: Bancos de todo el Perú
+            - generic [ref=f4e744]: Directo a Cuenta
+      - generic [ref=f4e745]:
+        - generic [ref=f4e746]:
+          - generic [ref=f4e747]: 🚚
+          - generic [ref=f4e748]:
+            - heading "Cobertura Nacional de Envíos" [level=4] [ref=f4e749]
+            - paragraph [ref=f4e750]:
+              - text: Enviamos tus cosméticos protegidos mediante
+              - strong [ref=f4e751]: Olva Courier
+              - text: "y"
+              - strong [ref=f4e752]: Shalom
+              - text: a cualquier departamento del Perú.
+        - generic [ref=f4e753]:
+          - generic [ref=f4e754]: "Lima: 24 - 48h"
+          - generic [ref=f4e755]: "Provincias: 48 - 72h"
+    - generic [ref=f4e757]:
+      - generic [ref=f4e758]:
+        - generic [ref=f4e759]: "#NJBelleza"
+        - heading "Conéctate con Nuestra Comunidad" [level=2] [ref=f4e761]
+        - paragraph [ref=f4e762]: Descubre tutoriales, tendencias, opiniones de clientas reales y contenido exclusivo en nuestras redes oficiales.
+      - generic [ref=f4e763]:
+        - link "Instagram @njimportaciones Fotos de tonos reales, swatches diarios, historias con pedidos despachados y sorteos. +28.5K Seguidoras Seguir" [ref=f4e764] [cursor=pointer]:
+          - /url: https://instagram.com/njimportaciones
+          - generic [ref=f4e765]:
+            - text: Instagram
+            - heading "@njimportaciones" [level=3] [ref=f4e769]
+            - paragraph [ref=f4e770]: Fotos de tonos reales, swatches diarios, historias con pedidos despachados y sorteos.
+          - generic [ref=f4e771]:
+            - generic [ref=f4e772]: +28.5K Seguidoras
+            - generic [ref=f4e773]: Seguir
+        - link "TikTok @njimportaciones.pe Videos virales, rutinas de maquillaje paso a paso, tests de duración e ingresos semanales. +65.2K Seguidoras Ver Videos" [ref=f4e776] [cursor=pointer]:
+          - /url: https://tiktok.com/@njimportaciones.pe
+          - generic [ref=f4e777]:
+            - text: TikTok
+            - heading "@njimportaciones.pe" [level=3] [ref=f4e781]
+            - paragraph [ref=f4e782]: Videos virales, rutinas de maquillaje paso a paso, tests de duración e ingresos semanales.
+          - generic [ref=f4e783]:
+            - generic [ref=f4e784]: +65.2K Seguidoras
+            - generic [ref=f4e785]: Ver Videos
+        - link "Facebook NJ Importaciones Oficial Transmisiones en vivo, catálogos en PDF descargables y atención a compras por mayor. +19.4K Likes Me Gusta" [ref=f4e788] [cursor=pointer]:
+          - /url: https://facebook.com/njimportaciones
+          - generic [ref=f4e789]:
+            - text: Facebook
+            - heading "NJ Importaciones Oficial" [level=3] [ref=f4e793]
+            - paragraph [ref=f4e794]: Transmisiones en vivo, catálogos en PDF descargables y atención a compras por mayor.
+          - generic [ref=f4e795]:
+            - generic [ref=f4e796]: +19.4K Likes
+            - generic [ref=f4e797]: Me Gusta
+        - link [ref=f4e800] [cursor=pointer]:
+          - /url: https://wa.me/51912345678?text=Hola%20NJ%20Importaciones%2C%20quisiera%20asesor%C3%ADa%20sobre%20sus%20productos
+          - generic [ref=f4e801]:
+            - text: WhatsApp Directo
+            - heading "+51 912 345 678" [level=3] [ref=f4e805]
+            - paragraph [ref=f4e806]: Asesoría personalizada, confirmación inmediata de pagos con Yape y seguimiento de envíos.
+          - generic [ref=f4e807]:
+            - generic [ref=f4e808]: En Línea Ahora
+            - generic [ref=f4e810]: Chatear
+      - generic [ref=f4e813]:
+        - generic [ref=f4e814]:
+          - generic [ref=f4e815]:
+            - heading "Lo Más Visto en Nuestras Redes" [level=4] [ref=f4e816]
+            - paragraph [ref=f4e817]: Mira cómo lucen nuestros cosméticos aplicados en piel real.
+          - generic [ref=f4e818]: Etiquétanos con @njimportaciones
+        - generic [ref=f4e819]:
+          - generic [ref=f4e820]:
+            - img "¡Swatch de los 4 tonos Velvet Matte! ¿Cuál es tu favorito? 💄✨" [ref=f4e821]
+            - generic [ref=f4e822]:
+              - generic [ref=f4e823]:
+                - generic [ref=f4e824]: Reel
+                - generic [ref=f4e825]: 34.2K
+              - paragraph [ref=f4e826]: ¡Swatch de los 4 tonos Velvet Matte! ¿Cuál es tu favorito? 💄✨
+          - generic [ref=f4e827]:
+            - img "Uñas perfectas en 60 segundos con nuestro esmalte Diamond Shine 💅" [ref=f4e828]
+            - generic [ref=f4e829]:
+              - generic [ref=f4e830]:
+                - generic [ref=f4e831]: Post
+                - generic [ref=f4e832]: 1.8K likes
+              - paragraph [ref=f4e833]: Uñas perfectas en 60 segundos con nuestro esmalte Diamond Shine 💅
+          - generic [ref=f4e834]:
+            - img "Rutina antimanchas con Vitamina C & Ácido Hialurónico ✨ Piel luminosa" [ref=f4e835]
+            - generic [ref=f4e836]:
+              - generic [ref=f4e837]:
+                - generic [ref=f4e838]: Reel
+                - generic [ref=f4e839]: 48.9K
+              - paragraph [ref=f4e840]: Rutina antimanchas con Vitamina C & Ácido Hialurónico ✨ Piel luminosa
+          - generic [ref=f4e841]:
+            - img "El rubor más viral del momento ya está disponible en Perú 🌸" [ref=f4e842]
+            - generic [ref=f4e843]:
+              - generic [ref=f4e844]:
+                - generic [ref=f4e845]: Post
+                - generic [ref=f4e846]: 2.4K likes
+              - paragraph [ref=f4e847]: El rubor más viral del momento ya está disponible en Perú 🌸
+    - generic [ref=f4e849]:
+      - generic [ref=f4e850]:
+        - generic [ref=f4e851]: Testimonios Reales
+        - heading "Lo Que Dicen Nuestras Clientas" [level=2] [ref=f4e853]
+        - paragraph [ref=f4e854]: Miles de mujeres en todo el Perú confían en NJ Importaciones para resaltar su belleza.
+      - generic [ref=f4e855]:
+        - generic [ref=f4e856]:
+          - generic [ref=f4e857]:
+            - generic [ref=f4e858]:
+              - generic [ref=f4e859]: ★★★★★
+              - generic [ref=f4e860]: Compra Verificada
+            - paragraph [ref=f4e863]: "Producto: Labial Líquido Velvet Matte"
+            - paragraph [ref=f4e864]: "\"¡Me encantó la duración! Lo usé para un evento de 8 horas, comí y bebí y el labial seguía intacto sin manchar. Además pagué con Yape en un minuto y el envío llegó al día siguiente super bien empaquetado.\""
+          - generic [ref=f4e865]:
+            - generic [ref=f4e866]:
+              - generic [ref=f4e867]: V
+              - generic [ref=f4e868]:
+                - paragraph [ref=f4e869]: Valeria Morales
+                - paragraph [ref=f4e870]: Lima, San Isidro
+            - generic [ref=f4e871]: Hace 3 días
+        - generic [ref=f4e872]:
+          - generic [ref=f4e873]:
+            - generic [ref=f4e874]:
+              - generic [ref=f4e875]: ★★★★★
+              - generic [ref=f4e876]: Compra Verificada
+            - paragraph [ref=f4e879]: "Producto: Set Esmaltes Gel Polish UV"
+            - paragraph [ref=f4e880]: "\"Los tonos pastel son bellísimos y el secado es realmente rápido. No se descascaran para nada y brillan como de salón. Es mi segunda compra en NJ Importaciones y 100% recomendado.\""
+          - generic [ref=f4e881]:
+            - generic [ref=f4e882]:
+              - generic [ref=f4e883]: C
+              - generic [ref=f4e884]:
+                - paragraph [ref=f4e885]: Camila Rivas
+                - paragraph [ref=f4e886]: Arequipa
+            - generic [ref=f4e887]: Hace 1 semana
+        - generic [ref=f4e888]:
+          - generic [ref=f4e889]:
+            - generic [ref=f4e890]:
+              - generic [ref=f4e891]: ★★★★★
+              - generic [ref=f4e892]: Compra Verificada
+            - paragraph [ref=f4e895]: "Producto: Serum Vitamina C + Ácido Hialurónico"
+            - paragraph [ref=f4e896]: "\"Tenía manchitas por el sol y este serum me ha cambiado la textura de la piel en solo dos semanas. Textura ligera que no deja grasoso el rostro. La atención por WhatsApp fue súper amable.\""
+          - generic [ref=f4e897]:
+            - generic [ref=f4e898]:
+              - generic [ref=f4e899]: F
+              - generic [ref=f4e900]:
+                - paragraph [ref=f4e901]: Fiorella Sandoval
+                - paragraph [ref=f4e902]: Trujillo
+            - generic [ref=f4e903]: Hace 2 semanas
+  - contentinfo [ref=f4e904]:
+    - generic [ref=f4e905]:
+      - generic [ref=f4e906]:
+        - generic [ref=f4e907]:
+          - link "NJ Importaciones Logo NJ ♥ Importaciones" [ref=f4e908] [cursor=pointer]:
+            - /url: /
+            - img "NJ Importaciones Logo" [ref=f4e910]
+            - generic [ref=f4e911]:
+              - generic [ref=f4e912]:
+                - generic [ref=f4e913]: NJ
+                - generic [ref=f4e914]: ♥
+              - text: Importaciones
+          - paragraph [ref=f4e915]: "Descubre la mejor selección de cosméticos para mujeres: labiales, esmaltes y pintauñas, bases, cremas hidratantes, serums y maquillaje importado en Perú."
+          - generic [ref=f4e916]:
+            - link "Instagram" [ref=f4e917] [cursor=pointer]:
+              - /url: https://instagram.com/njimportaciones
+            - link "TikTok" [ref=f4e920] [cursor=pointer]:
+              - /url: https://tiktok.com/@njimportaciones.pe
+            - link "Facebook" [ref=f4e923] [cursor=pointer]:
+              - /url: https://facebook.com/njimportaciones
+            - link "WhatsApp" [ref=f4e926] [cursor=pointer]:
+              - /url: https://wa.me/51912345678?text=Hola%20NJ%20Importaciones%2C%20deseo%20consultar%20sobre%20sus%20cosm%C3%A9ticos%20disponibles
+        - generic [ref=f4e929]:
+          - heading "Enlaces Rápidos" [level=4] [ref=f4e930]
+          - list [ref=f4e931]:
+            - listitem [ref=f4e932]:
+              - link "Inicio" [ref=f4e933] [cursor=pointer]:
+                - /url: "#inicio"
+            - listitem [ref=f4e934]:
+              - link "Ofertas Flash ⚡" [ref=f4e935] [cursor=pointer]:
+                - /url: "#ofertas"
+            - listitem [ref=f4e936]:
+              - link "Categorías" [ref=f4e937] [cursor=pointer]:
+                - /url: "#categorias"
+            - listitem [ref=f4e938]:
+              - link "Catálogo de Cosméticos" [ref=f4e939] [cursor=pointer]:
+                - /url: "#catalogo"
+            - listitem [ref=f4e940]:
+              - link "Métodos de Pago & Envíos" [ref=f4e941] [cursor=pointer]:
+                - /url: "#pagos"
+            - listitem [ref=f4e942]:
+              - link "Nuestra Comunidad" [ref=f4e943] [cursor=pointer]:
+                - /url: "#redes"
+        - generic [ref=f4e944]:
+          - heading "Categorías" [level=4] [ref=f4e945]
+          - list [ref=f4e946]:
+            - listitem [ref=f4e947]:
+              - link "Labiales Velvet & Gloss" [ref=f4e948] [cursor=pointer]:
+                - /url: "#catalogo"
+            - listitem [ref=f4e949]:
+              - link "Esmaltes de Uñas en Gel" [ref=f4e950] [cursor=pointer]:
+                - /url: "#catalogo"
+            - listitem [ref=f4e951]:
+              - link "Cremas Faciales & Skincare" [ref=f4e952] [cursor=pointer]:
+                - /url: "#catalogo"
+            - listitem [ref=f4e953]:
+              - link "Serums Antimanchas & Glow" [ref=f4e954] [cursor=pointer]:
+                - /url: "#catalogo"
+            - listitem [ref=f4e955]:
+              - link "Bases & Rubores Líquidos" [ref=f4e956] [cursor=pointer]:
+                - /url: "#catalogo"
+            - listitem [ref=f4e957]:
+              - link "Brochas Profesionales" [ref=f4e958] [cursor=pointer]:
+                - /url: "#catalogo"
+        - generic [ref=f4e959]:
+          - heading "Paga Seguro" [level=4] [ref=f4e960]
+          - paragraph [ref=f4e961]: "Aceptamos los principales métodos de pago en Perú:"
+          - generic [ref=f4e962]:
+            - generic [ref=f4e963]: YAPE
+            - generic [ref=f4e964]: VISA
+            - generic [ref=f4e965]: Mastercard
+            - generic [ref=f4e966]: BCP
+          - generic [ref=f4e967]:
+            - paragraph [ref=f4e968]: "📞 WhatsApp: +51 912 345 678"
+            - paragraph [ref=f4e969]: "⏰ Lunes a Sábado: 9:00 am - 8:00 pm"
+            - paragraph [ref=f4e970]: 📍 Lima, Perú (Envíos a todo el país)
+      - generic [ref=f4e971]:
+        - paragraph [ref=f4e972]:
+          - text: © 2026
+          - strong [ref=f4e973]: NJ Importaciones
+          - text: . Todos los derechos reservados. Cosméticos y Belleza Femenina en Perú.
+        - generic [ref=f4e974]:
+          - link "Términos de Envío" [ref=f4e975] [cursor=pointer]:
+            - /url: "#pagos"
+          - link "Garantía de Satisfacción" [ref=f4e976] [cursor=pointer]:
+            - /url: "#pagos"
+          - link "Libro de Reclamaciones" [ref=f4e977] [cursor=pointer]:
+            - /url: https://wa.me/51912345678?text=Hola%2C%20deseo%20informaci%C3%B3n%20sobre%20el%20libro%20de%20reclamaciones
+  - generic:
+    - generic: ✓
+    - generic: Producto añadido al carrito
+  - link "Contactar por WhatsApp a NJ Importaciones" [ref=f4e979] [cursor=pointer]:
+    - /url: https://wa.me/51912345678?text=Hola%20NJ%20Importaciones%2C%20quisiera%20asesor%C3%ADa%20sobre%20los%20cosm%C3%A9ticos
+    - generic [ref=f4e983]: "1"
+  - generic [ref=f4e986]:
+    - button [ref=f4e987]
+    - button [ref=f4e993]
+    - button [ref=f4e997]
+    - button [ref=f4e1002]

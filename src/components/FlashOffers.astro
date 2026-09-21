@@ -1,0 +1,115 @@
+---
+import { PRODUCTS } from '../data/products';
+import ProductCard from './ProductCard.astro';
+
+const flashProducts = PRODUCTS.filter(p => p.isFlashOffer);
+---
+
+<section id="ofertas" class="py-16 sm:py-20 bg-gradient-to-b from-white via-pink-50/50 to-white relative overflow-hidden">
+  <!-- Decorative background circles -->
+  <div class="absolute -top-24 right-0 w-96 h-96 bg-brand-pink/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute -bottom-24 left-0 w-96 h-96 bg-brand-pink/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    
+    <!-- Header with Countdown Timer -->
+    <div class="bg-brand-dark rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 text-white shadow-2xl border border-brand-pink/30 mb-8 sm:mb-12 relative overflow-hidden reveal-on-scroll">
+      <!-- Background subtle gradient -->
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-pink/20 via-transparent to-purple-900/30"></div>
+      
+      <div class="relative flex flex-col lg:flex-row items-center justify-between gap-5 sm:gap-6 text-center lg:text-left">
+        
+        <!-- Left: Text Info -->
+        <div class="space-y-1.5 sm:space-y-2 max-w-xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-rose/30 border border-brand-rose/50 text-pink-200 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-brand-rose animate-ping"></span>
+            <span>VENTA FLASH DE TEMPORADA</span>
+          </div>
+          <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-white">
+            Descuentos Exclusivos por Tiempo Limitado
+          </h2>
+          <p class="text-xs sm:text-sm text-gray-300">
+            Aprovecha hasta un <strong class="text-brand-pink font-semibold">35% de descuento</strong> en nuestros cosméticos y esmaltes más vendidos. Stock limitado por lanzamiento.
+          </p>
+        </div>
+
+        <!-- Right: Live Countdown -->
+        <div class="flex flex-col items-center bg-brand-dark-surface/90 border border-brand-pink/40 p-3 sm:p-5 rounded-2xl shadow-inner w-full sm:w-auto">
+          <span class="text-[11px] sm:text-xs font-semibold text-pink-200 uppercase tracking-widest mb-2 sm:mb-3 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-brand-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            La oferta termina en:
+          </span>
+
+          <div class="flex items-center justify-center gap-2 sm:gap-3 text-center" id="countdown-timer">
+            <div class="bg-black/60 border border-pink-500/20 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl min-w-12 sm:min-w-14">
+              <span id="timer-hours" class="font-mono text-xl sm:text-3xl font-bold text-white">08</span>
+              <span class="block text-[9px] sm:text-[10px] text-pink-300 uppercase mt-0.5">Horas</span>
+            </div>
+            <span class="font-bold text-lg sm:text-xl text-brand-pink">:</span>
+            <div class="bg-black/60 border border-pink-500/20 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl min-w-12 sm:min-w-14">
+              <span id="timer-minutes" class="font-mono text-xl sm:text-3xl font-bold text-white">45</span>
+              <span class="block text-[9px] sm:text-[10px] text-pink-300 uppercase mt-0.5">Minutos</span>
+            </div>
+            <span class="font-bold text-lg sm:text-xl text-brand-pink">:</span>
+            <div class="bg-black/60 border border-pink-500/20 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl min-w-12 sm:min-w-14">
+              <span id="timer-seconds" class="font-mono text-xl sm:text-3xl font-bold text-brand-pink">30</span>
+              <span class="block text-[9px] sm:text-[10px] text-pink-300 uppercase mt-0.5">Segundos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Flash Products Grid: 2 cols on mobile -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+      {flashProducts.slice(0, 4).map((product, idx) => (
+        <ProductCard 
+          product={product} 
+          class:list={[
+            "reveal-on-scroll",
+            idx === 1 ? "delay-100" : idx === 2 ? "delay-200" : idx === 3 ? "delay-300" : ""
+          ]}
+        />
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<script>
+  // Simple, persistent countdown timer in Vanilla JS
+  function initCountdown() {
+    const hoursEl = document.getElementById('timer-hours');
+    const minutesEl = document.getElementById('timer-minutes');
+    const secondsEl = document.getElementById('timer-seconds');
+
+    if (!hoursEl || !minutesEl || !secondsEl) return;
+
+    // Fixed 8 hours 45 mins countdown target
+    let targetTime = Date.now() + (8 * 3600 + 45 * 60 + 30) * 1000;
+
+    function update() {
+      const now = Date.now();
+      const diff = Math.max(0, targetTime - now);
+
+      const h = Math.floor(diff / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+      hoursEl.textContent = String(h).padStart(2, '0');
+      minutesEl.textContent = String(m).padStart(2, '0');
+      secondsEl.textContent = String(s).padStart(2, '0');
+
+      if (diff > 0) {
+        requestAnimationFrame(() => setTimeout(update, 1000));
+      }
+    }
+
+    update();
+  }
+
+  initCountdown();
+</script>

@@ -1,0 +1,201 @@
+---
+import yapeSvg from '../assets/icons/payments/yape.svg';
+import bcpSvg from '../assets/icons/payments/bcp.svg';
+import cciSvg from '../assets/icons/payments/cci.svg';
+---
+
+<section id="pagos" class="py-16 sm:py-20 bg-gradient-to-b from-white via-pink-50/40 to-brand-pink-light/30 border-y border-pink-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal-on-scroll">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-100 border border-brand-pink/30 text-brand-pink-hover text-xs font-bold uppercase tracking-wider mb-3">
+        <span>Compra 100% Segura</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
+        Paga Fácil con Yape, Tarjetas y Transferencias
+      </h2>
+      <p class="mt-3 text-sm sm:text-base text-gray-600">
+        Disfruta de una experiencia de compra rápida, transparente y sin comisiones ocultas. Aceptamos tus medios de pago favoritos en Perú.
+      </p>
+    </div>
+
+    <!-- Main Payment Showcase Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Card 1: YAPE (Featured) -->
+      <div class="reveal-on-scroll relative bg-white rounded-3xl p-8 border-2 border-brand-pink shadow-xl shadow-pink-100 flex flex-col justify-between transform md:-translate-y-2">
+        <span class="absolute -top-3.5 right-6 bg-brand-pink text-white text-[11px] font-extrabold uppercase px-3.5 py-1 rounded-full shadow-md">
+          Más Utilizado en Perú
+        </span>
+
+        <div>
+          <!-- Yape Logo Badge -->
+          <div class="w-16 h-16 rounded-2xl bg-[#9117A0] p-2.5 flex items-center justify-center shadow-lg shadow-purple-900/20 mb-6">
+            <img src={yapeSvg.src} alt="Logo Yape" class="w-full h-full object-contain" />
+          </div>
+
+          <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">
+            Paga con Yape
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-6">
+            Transfiere al instante escaneando nuestro código QR o digitando nuestro número autorizado al momento de coordinar tu pedido.
+          </p>
+
+          <ul class="space-y-2.5 text-xs text-gray-700">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Confirmación inmediata de tu pago</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Cero comisiones o recargos</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Compatible con Yape con BCP o DNI</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-pink-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-medium">Disponible 24/7</span>
+          <span class="text-[#9117A0] font-bold">Aprobación Express ⚡</span>
+        </div>
+      </div>
+
+      <!-- Card 2: Tarjetas de Crédito & Débito -->
+      <div class="reveal-on-scroll delay-100 bg-white rounded-3xl p-8 border border-pink-100 shadow-md hover:shadow-xl transition-shadow flex flex-col justify-between">
+        <div>
+          <!-- Card Icon Badge -->
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-pink-soft to-pink-100 border border-pink-200 p-3 flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-brand-pink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="5" width="20" height="14" rx="3"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+              <line x1="6" y1="15" x2="10" y2="15"/>
+            </svg>
+          </div>
+
+          <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">
+            Todas las Tarjetas
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-6">
+            Aceptamos tarjetas de débito y crédito nacionales e internacionales con cifrado bancario seguro.
+          </p>
+
+          <!-- Card Brands SVGs -->
+          <div class="flex items-center gap-3 py-2 mb-4">
+            <span class="px-2.5 py-1 bg-gray-50 border border-gray-200 rounded font-bold text-blue-900 text-xs tracking-wider">VISA</span>
+            <span class="px-2.5 py-1 bg-gray-50 border border-gray-200 rounded font-bold text-red-600 text-xs tracking-wider">Mastercard</span>
+            <span class="px-2.5 py-1 bg-gray-50 border border-gray-200 rounded font-bold text-blue-500 text-xs tracking-wider">Amex</span>
+            <span class="px-2.5 py-1 bg-gray-50 border border-gray-200 rounded font-bold text-blue-700 text-xs tracking-wider">Diners</span>
+          </div>
+
+          <ul class="space-y-2.5 text-xs text-gray-700">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Pago seguro con link protegido</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Acepta tarjetas de cualquier banco peruano</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Sin costos adicionales por pasarela</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-pink-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-medium">Cifrado SSL 256-bit</span>
+          <span class="text-brand-pink font-bold">100% Protegido</span>
+        </div>
+      </div>
+
+      <!-- Card 3: BCP & Transferencias CCI -->
+      <div class="reveal-on-scroll delay-200 bg-white rounded-3xl p-8 border border-pink-100 shadow-md hover:shadow-xl transition-shadow flex flex-col justify-between">
+        <div>
+          <!-- BCP / Bank Icon Badge -->
+          <div class="w-16 h-16 rounded-2xl bg-[#002A8D] p-2 flex items-center justify-center shadow-lg shadow-blue-900/20 mb-6 overflow-hidden">
+            <img src={bcpSvg.src} alt="BCP" class="w-full h-full object-contain" />
+          </div>
+
+          <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">
+            BCP & Interbancario CCI
+          </h3>
+          <p class="text-sm text-gray-600 leading-relaxed mb-6">
+            Realiza transferencias directas desde banca móvil o agentes autorizados. Ideal para compras por mayor y envíos a provincia.
+          </p>
+
+          <div class="flex items-center gap-3 py-2 mb-4">
+            <img src={cciSvg.src} alt="CCI" class="h-6 object-contain" />
+            <span class="text-xs text-gray-500 font-medium">+ Cualquier banco nacional</span>
+          </div>
+
+          <ul class="space-y-2.5 text-xs text-gray-700">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Transferencias directas sin recargo</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Envío de voucher por WhatsApp</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Despacho el mismo día de confirmación</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-pink-100 flex items-center justify-between text-xs">
+          <span class="text-gray-500 font-medium">Bancos de todo el Perú</span>
+          <span class="text-blue-700 font-bold">Directo a Cuenta</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Logistics Trust Strip -->
+    <div class="reveal-on-scroll mt-14 bg-brand-dark rounded-2xl p-6 sm:p-8 text-white flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-4 text-left">
+        <div class="w-12 h-12 rounded-xl bg-brand-pink/20 text-brand-pink border border-brand-pink/40 flex items-center justify-center text-2xl shrink-0">
+          🚚
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-lg text-white">Cobertura Nacional de Envíos</h4>
+          <p class="text-xs text-gray-300 mt-0.5">Enviamos tus cosméticos protegidos mediante <strong>Olva Courier</strong> y <strong>Shalom</strong> a cualquier departamento del Perú.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3 shrink-0">
+        <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white/10 text-pink-200 border border-white/15">
+          Lima: 24 - 48h
+        </span>
+        <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white/10 text-pink-200 border border-white/15">
+          Provincias: 48 - 72h
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
